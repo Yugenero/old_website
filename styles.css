@@ -1,0 +1,183 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box; /*changing how padding is calculated*/
+}
+
+/* Custom properties */
+
+:root {
+	/* proper syntax is as follows */
+	--ff-primary: 'Source Sans Pro' sans-serif;
+	--ff-secondary: 'Source Code Pro', monospace;
+
+	--fw-reg: 300;
+	--fw-bold: 900;
+
+	--clr-bg: #fff;
+	--clr-dark: #303030;
+	--clr-accent: #dc143c;
+	--fs-h1: 3rem;
+	--fs-h2: 2.25rem;
+	--fs-h3: 1.25rem;
+	--fs-body: 1rem;
+}
+
+/*fonts should be redefined here*/
+@media (min-width: 1000px) {
+	:root {
+		--fs-h1: 4.5rem;
+		--fs-h2: 3.75rem;
+		--fs-h3: 1.5rem;
+		--fs-body: 1.125rem;
+	}
+}
+
+@media (max-width: 700px) {
+	.section__title--intro {
+		font-size: 2rem;
+	}
+}
+
+/* General Styles */
+
+body {
+	background: rgb(25, 25, 23);
+	color: var(--clr-dark);
+	margin: 0;
+	font-family: var(--ff-primary);
+	font-size: var(--fs-body);
+	line-height: 1;
+}
+
+section {
+	padding: 5em 2em;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3 {
+	line-height: 1.1;
+	margin: 0; /*might need to be changed later*/
+}
+
+h1 { font-size: var(--fs-h1) } 
+h2 { font-size: var(--fs-h2) } 
+h3 { font-size: var(--fs-h3) } 
+
+strong { font-weight: var(--fw-bold); }
+
+
+.section__title--intro {
+	font-weight: var(--fw-reg);
+}
+
+.section__subtitle--intro {
+	font-size: 1.2em;
+	margin: 1;
+	text-align: center;
+	font-family: var(--ff-secondary);
+	color: rgb(70, 70, 70);
+	margin-bottom: 1em;
+}
+
+/* header */
+
+nav { display:none; }
+
+/* intro section */
+
+.intro {
+	position: relative;
+}
+
+/* footer */
+
+.footer {
+	text-align: center;
+	font-size: var(--fs-h3);
+}
+
+.footer a {
+	color: rgb(70, 70, 70);
+	text-decoration: none;
+}
+
+.social-list--link:hover {
+	color: violet;
+}
+
+.social-list {
+	display: flex;
+	color: inherit;
+	list-style: none;
+	justify-content: center;
+	margin: 1em 0;
+	padding: 0;
+}
+
+.social-list--item {
+	margin: 0 .5em;
+	position: relative;
+	bottom: 100px;
+}
+
+.resume {
+	font-style: normal;
+	font-family: "Roboto Slab";
+	font-size: 0.95em;
+}
+
+.resume:hover {
+	color: violet;
+}
+
+.link-gatech {
+	text-decoration: none;
+	color: inherit;
+	font-family: 'Roboto Slab', serif; 
+}
+.link-gatech:hover {
+	color: rgb(179, 163, 105);
+}
+.link-gatech:visited {
+	color: rgb(179, 163, 105​);
+	text-decoration: none;
+}
+
+.section__title--intro {
+	text-align: center;
+	color: rgb(255, 255, 255);
+	font-size: 3rem;
+	font-family: "ubuntu";
+	text-transform: uppercase;
+	font-weight: 700;
+	font-family: "Josefin Sans", sans-serif;
+	background: linear-gradient(to left, rgb(235, 105, 235), violet 60%);
+	background-size: auto auto;
+	background-clip: border-box;
+	background-size: 200% auto;
+	color: #fff;
+	background-clip: text;
+	text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: textclip 3.5s linear infinite;
+  }
+  
+@keyframes textclip {
+	to {
+		background-position: 200% center;
+	}
+}
+
+
+
+
