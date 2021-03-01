@@ -111,7 +111,7 @@ nav { display:none; }
 }
 
 .social-list--link:hover {
-	color: violet;
+	color: beige;
 }
 
 .social-list {
@@ -136,7 +136,7 @@ nav { display:none; }
 }
 
 .resume:hover {
-	color: violet;
+	color: beige;
 }
 
 .link-gatech {
@@ -160,7 +160,7 @@ nav { display:none; }
 	text-transform: uppercase;
 	font-weight: 700;
 	font-family: "Josefin Sans", sans-serif;
-	background: linear-gradient(to left, rgb(235, 105, 235), violet 60%);
+	background: linear-gradient(to left, white, beige 60%);
 	background-size: auto auto;
 	background-clip: border-box;
 	background-size: 200% auto;
